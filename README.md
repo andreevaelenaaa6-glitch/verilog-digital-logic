@@ -22,6 +22,12 @@ Each design has a matching testbench in `testbench/`:
 | `tb_memory.v` | Async, sync and dual-port memory read/write behavior |
 | `tb_data_pipeline.v` | Data pipeline with a sequence of memory addresses |
 
+   ## Simulation result
+
+   4-bit counter waveform from ModelSim. `count0` toggles on every clock edge, and the counter resets to zero when `res` is low:
+
+   ![Counter waveform](waveform.png)
+
 ## Design highlights
 
 - **Hierarchical design:** adders are built from gate modules, and the counter is built from adders and flip-flops.
